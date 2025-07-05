@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Desi Hotspot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <div class="mandala"></div>
+            </div>
+            <div class="logo-text">
+                <h1 class="brand-name">Desi Hotspot</h1>
+                <p class="tagline">Where Flavor Ignites</p>
+            </div>
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">Desi Hotspot</div>
+            <button class="mobile-close">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <p>Where Flavor Ignites</p>
+        </div>
+    </div>
+    <main>
+        <h1>Our Menu</h1>
+        
+        <!-- Filter Controls -->
+        <div class="menu-filters">
+            <div class="search-container">
+                <input type="text" id="menu-search" placeholder="Search dishes..." class="search-input">
+                <button type="button" id="clear-search" class="clear-btn">Clear</button>
+            </div>
+            <div class="category-filters">
+                <button type="button" class="filter-btn active" data-category="all">All</button>
+                <button type="button" class="filter-btn" data-category="breakfast">Breakfast</button>
+                <button type="button" class="filter-btn" data-category="biryani">Biryani & Rice</button>
+                <button type="button" class="filter-btn" data-category="curries">Curries & Entrees</button>
+                <button type="button" class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button type="button" class="filter-btn" data-category="breads">Breads</button>
+                <button type="button" class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+        </div>
+
+        <!-- Order Online Placeholder Section -->
+        <section class="order-online-section">
+            <div class="order-online-content">
+                <h2>Order Online</h2>
+                <p>Order your favorite dishes for pickup or delivery! Our online ordering system will soon make it easy to enjoy Desi Hotspot at home or on the go.</p>
+                <a href="#" class="order-online-btn" aria-disabled="true">Order Online (Coming Soon)</a>
+                <div class="order-integrations">
+                    <p><strong>Future Integrations:</strong> We plan to support popular platforms like <span class="integration">Toast</span>, <span class="integration">DoorDash</span>, and <span class="integration">Uber Eats</span> for seamless ordering and delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-container">
+            <section class="menu-section" id="south-indian-breakfast" data-category="breakfast">
+                <h2>South Indian Breakfast</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="masala dosa" data-category="breakfast">
+                        <div class="dish-name">Masala Dosa</div>
+                        <div class="dish-desc">Crispy rice and lentil crepe filled with spiced potato mixture, served with coconut chutney and sambar.</div>
+                        <div class="dish-price">$12.99</div>
+                    </div>
+                    <div class="menu-item" data-name="idli sambar" data-category="breakfast">
+                        <div class="dish-name">Idli Sambar</div>
+                        <div class="dish-desc">Steamed rice and lentil cakes served with aromatic lentil soup and coconut chutney.</div>
+                        <div class="dish-price">$10.99</div>
+                    </div>
+                    <div class="menu-item" data-name="upma" data-category="breakfast">
+                        <div class="dish-name">Upma</div>
+                        <div class="dish-desc">Savory semolina porridge with vegetables, nuts, and aromatic spices.</div>
+                        <div class="dish-price">$9.99</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-section" id="biryani-rice" data-category="biryani">
+                <h2>Biryani & Rice</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="chicken biryani" data-category="biryani">
+                        <div class="dish-name">Chicken Biryani</div>
+                        <div class="dish-desc">Fragrant basmati rice layered with tender chicken, aromatic spices, and caramelized onions.</div>
+                        <div class="dish-price">$18.99</div>
+                    </div>
+                    <div class="menu-item" data-name="vegetable biryani" data-category="biryani">
+                        <div class="dish-name">Vegetable Biryani</div>
+                        <div class="dish-desc">Aromatic rice dish with fresh vegetables, herbs, and traditional spices.</div>
+                        <div class="dish-price">$16.99</div>
+                    </div>
+                    <div class="menu-item" data-name="jeera rice" data-category="biryani">
+                        <div class="dish-name">Jeera Rice</div>
+                        <div class="dish-desc">Basmati rice flavored with cumin seeds and aromatic spices.</div>
+                        <div class="dish-price">$8.99</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-section" id="curries-entrees" data-category="curries">
+                <h2>Curries & Entrees</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="butter chicken" data-category="curries">
+                        <div class="dish-name">Butter Chicken</div>
+                        <div class="dish-desc">Tender chicken in a rich, creamy tomato-based curry with aromatic spices.</div>
+                        <div class="dish-price">$19.99</div>
+                    </div>
+                    <div class="menu-item" data-name="paneer tikka masala" data-category="curries">
+                        <div class="dish-name">Paneer Tikka Masala</div>
+                        <div class="dish-desc">Grilled cottage cheese cubes in a creamy, spiced tomato gravy.</div>
+                        <div class="dish-price">$17.99</div>
+                    </div>
+                    <div class="menu-item" data-name="dal makhani" data-category="curries">
+                        <div class="dish-name">Dal Makhani</div>
+                        <div class="dish-desc">Slow-cooked black lentils with cream and aromatic spices.</div>
+                        <div class="dish-price">$14.99</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-section" id="appetizers" data-category="appetizers">
+                <h2>Appetizers</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="samosa" data-category="appetizers">
+                        <div class="dish-name">Samosa</div>
+                        <div class="dish-desc">Crispy pastry filled with spiced potatoes, peas, and aromatic spices.</div>
+                        <div class="dish-price">$6.99</div>
+                    </div>
+                    <div class="menu-item" data-name="pakora" data-category="appetizers">
+                        <div class="dish-name">Mixed Vegetable Pakora</div>
+                        <div class="dish-desc">Crispy fritters made with assorted vegetables and chickpea flour.</div>
+                        <div class="dish-price">$7.99</div>
+                    </div>
+                    <div class="menu-item" data-name="chicken tikka" data-category="appetizers">
+                        <div class="dish-name">Chicken Tikka</div>
+                        <div class="dish-desc">Tender chicken marinated in yogurt and spices, grilled to perfection.</div>
+                        <div class="dish-price">$12.99</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-section" id="breads" data-category="breads">
+                <h2>Breads</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="naan" data-category="breads">
+                        <div class="dish-name">Plain Naan</div>
+                        <div class="dish-desc">Soft, fluffy leavened bread baked in a tandoor oven.</div>
+                        <div class="dish-price">$3.99</div>
+                    </div>
+                    <div class="menu-item" data-name="garlic naan" data-category="breads">
+                        <div class="dish-name">Garlic Naan</div>
+                        <div class="dish-desc">Naan bread topped with garlic, herbs, and butter.</div>
+                        <div class="dish-price">$4.99</div>
+                    </div>
+                    <div class="menu-item" data-name="roti" data-category="breads">
+                        <div class="dish-name">Whole Wheat Roti</div>
+                        <div class="dish-desc">Healthy whole wheat flatbread, perfect for scooping up curries.</div>
+                        <div class="dish-price">$2.99</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="menu-section" id="desserts" data-category="desserts">
+                <h2>Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-name="gulab jamun" data-category="desserts">
+                        <div class="dish-name">Gulab Jamun</div>
+                        <div class="dish-desc">Soft, sweet milk solids dumplings soaked in rose-flavored sugar syrup.</div>
+                        <div class="dish-price">$6.99</div>
+                    </div>
+                    <div class="menu-item" data-name="rasmalai" data-category="desserts">
+                        <div class="dish-name">Rasmalai</div>
+                        <div class="dish-desc">Soft cottage cheese patties soaked in sweetened, thickened milk.</div>
+                        <div class="dish-price">$7.99</div>
+                    </div>
+                    <div class="menu-item" data-name="kheer" data-category="desserts">
+                        <div class="dish-name">Rice Kheer</div>
+                        <div class="dish-desc">Creamy rice pudding flavored with cardamom, saffron, and nuts.</div>
+                        <div class="dish-price">$5.99</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
